@@ -2,7 +2,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #747474;
+  background-color: #161b22;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -10,7 +11,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: #fff;
+  background-color: #002357;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: calc(100% - 40px); /* Adjusted width to account for margin */
@@ -20,19 +21,22 @@ body {
   right: 20px; /* Adjusted right position to account for margin */
   z-index: 1000;
   box-sizing: border-box; /* Ensure padding is included in the width */
-  border-radius: 10px; /* Added border radius */
+  border-radius: 100px; /* Added border radius */
   margin: 10px; /* Added margin to match .main */
-  border-right: 2px solid #575757; /* Added right border */
-  border-left: 2px solid #575757;
+  border-right: 2px solid #000000; /* Added right border */
+  border-left: 2px solid #000000;
+  border-top: 2px solid #000000;
+  border-bottom: 2px solid #000000;
 }
 
 .logo img {
   height: 50px;
   transition: transform 0.3s;
+  border-radius: 100px;
 }
 
 .logo img:hover {
-  transform: scale(1.1);
+  transform: scale(1.8);
 }
 
 .navbar {
@@ -68,7 +72,7 @@ body {
 
 .navbar nav ul li a {
   text-decoration: none;
-  color: #ffcc00;
+  color: #ffffff;
   font-weight: bold;
   padding: 10px 15px;
   transition: background-color 0.3s, color 0.3s;
@@ -77,18 +81,21 @@ body {
 
 .navbar nav ul li a:hover,
 .navbar nav ul li a.active {
-  background-color: #575757;
-  border-radius: 5px;
-  color: #ffcc00;
+  background-color: #161b22;
+  border-radius: 50px;
+  color: #ffffff;
+  transition: 0.5s;
 }
 
 .main {
   padding: 20px;
   text-align: center;
-  background-color: #fff;
+  background-color:  #8b8b8b;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 90px 20px 20px 20px; /* Adjusted margin to account for fixed navbar */
-  border-radius: 10px;
+  margin: 95px 20px 20px 20px; /* Adjusted margin to account for fixed navbar */
+  border-radius: 50px;
+  color:  8px solid  #000000;
+ 
 }
 
 /* Responsive Design */
