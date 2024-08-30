@@ -13,63 +13,41 @@ body {
 }
 
 .navbar {
-  background-image: linear-gradient(90deg, #00ff9d 20%, #eeff00 70%);
-  
-  width: 98.4%;
-  margin-left: 10px;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  /* margin-left: 10px; */
   box-sizing: border-box;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 10px;
+  /* position: sticky; */
+  /* top: 10px; */
 
   .logo {
-    background-color: rgb(136, 52, 52);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
-    padding: 0;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    border: 2px solid rgb(0, 0, 0);
-
     img {
-      width: 17%;
+      width: 90px;
       margin-left: 20px;
       margin-top: 3px;
       border-radius: 30px;
-      background-color: transparent;
-      transition: width 0.3s linear, border-radius 0.3s linear;
-      /* border: 1px solid rgb(81, 255, 0); */
+      transition: border 0.2s linear;
+      border: 2px solid rgb(0, 17, 255);
     }
     img:hover {
-      width: 22%;
-      border-radius: 10px;
+      border: 2px solid rgb(0, 255, 34);
     }
   }
 
   .list {
-    background-color: rgb(0, 0, 0);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    padding: 0;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
-    border: 2px solid rgb(0, 0, 0);
-    /* border: 1px solid rgb(255, 0, 0); */
-
     ul {
       display: inline-flex;
       /* border: 1px solid rgb(255, 255, 255); */
       gap: 40px;
       align-items: center;
-      
 
       li {
-        border: none;
+        border: 2px solid rgb(255, 255, 255);
         border-radius: 30px;
         margin-right: 20px;
         background-image: linear-gradient(90deg, #4043f3 20%, #ea00ff 70%);
@@ -81,22 +59,119 @@ body {
           padding: 10px 20px;
           border: none;
           cursor: pointer;
-         
+          transition: color 0.2s;
         }
       }
+    }
+    a:hover {
+      color: rgb(0, 0, 0);
     }
   }
 }
 
-.main {
-  background-color: transparent;
+.wellcome {
+  width: 1237px;
+  height: 560px;
+  background-color: rgb(29, 29, 29);
   color: rgb(0, 0, 0);
-  margin: 90px 10px;
+  margin: 10px auto;
   border-radius: 20px;
   box-sizing: border-box;
-  border: 1px solid rgb(255, 255, 255);
+  /* border: 2px solid rgb(255, 255, 255); */
+  position: relative;
+  
 
-  p {
-    padding: 10px 10px;
+  .pic {
+   
+    img {
+      width: 100%;
+      height: 300px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      object-fit: fill;
+      
+    }
+  }
+
+  .pic-2{
+    img{
+      width: 200px;
+      position: absolute;
+      right: 100px;
+      bottom: 150px;
+      border-radius: 50%;
+      border: 5px solid rgb(29, 29, 29);
+    }
+  }
+
+  .content{
+    h1{
+      /* position: absolute;
+      top: -30px;
+      left: 150px; */
+      font-size: 40px;
+      font-family: cursive;
+      text-align: left;
+      margin-left: 180px;
+      color:white;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    h2{
+      /* position: absolute;
+      top: 80px;
+      left: 20px; */
+      font-size: 40px;
+      font-weight: bolder;
+      color:rgb(0, 0, 0);
+      font-family: cursive;
+      text-align: left;
+      margin-left: 20px;
+      color:white;
+      padding: 0;
+      margin-top: 10px;
+      margin-bottom: 0;
+    }
+    h3{
+      font-size: 40px;
+      text-align: left;
+      margin-left: 20px;
+      color:white;
+      padding: 0;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+  }
+  .btn-1{
+
+    button{
+      background-image: linear-gradient(90deg, #4043f3 20%, #ea00ff 70%);
+      font-size: 15px;
+      border-radius: 50px;
+      border: 1px solid white;
+      color: white;
+      padding: 10px 20px;
+      font-weight: 1000;
+      position: absolute;
+      right: 220px;
+      bottom:60px;
+    }
+  }
+
+  .btn-2{
+
+    button{
+      background-image: linear-gradient(90deg, #4043f3 20%, #ea00ff 70%);
+      font-size: 15px;
+      border-radius: 50px;
+      border: 1px solid white;
+      color: white;
+      padding: 10px 20px;
+      font-weight: 1000;
+      position: absolute;
+      right: 50px;
+      bottom:60px;
+    }
   }
 }
