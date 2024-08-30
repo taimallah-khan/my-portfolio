@@ -14,16 +14,17 @@ body {
 
 .navbar {
   background-color: black;
-  width: 100%;
+  width: 98.4%;
   height: 80px;
-  /* margin-left: 10px; */
+  margin-left: 10px;
   box-sizing: border-box;
-  /* border-radius: 50px; */
+  border-radius: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: sticky; */
-  /* top: 10px; */
+  position: fixed; 
+  top: 10px;
+  z-index: 1000; /* Ensure the navbar is above other content */
 
   .logo {
     img {
@@ -79,6 +80,7 @@ body {
   box-sizing: border-box;
   /* border: 2px solid rgb(255, 255, 255); */
   position: relative;
+  top: 90px;
   
 
   .pic {
