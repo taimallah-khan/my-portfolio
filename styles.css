@@ -8,15 +8,17 @@ body {
   margin: 0;
   padding: 0;
   /* background-color: #161b22; */
-  background-image: linear-gradient(90deg, #4043f3 20%, #ea00ff 70%);
+  background-image: url(./pics/portpic0-0-0.jpg);
   scroll-behavior: smooth;
+  background-size: cover;
+background-repeat: no-repeat;
 }
 
 .navbar {
   background-color: black;
-  width: 98.4%;
+  width: 100%;
   height: 80px;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   box-sizing: border-box;
   border-radius: 50px;
   display: flex;
@@ -176,4 +178,8 @@ body {
       bottom:60px;
     }
   }
+}
+p{
+  color: white
+  ;
 }
